@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	//3
 	let divHover = document.getElementById('hover');
 	divHover.addEventListener('mouseover', () => {
-		divHover.style.backgroundColor = 'red';
+		divHover.style.backgroundColor = getRandomColor();
 	});
 	divHover.addEventListener('mouseout', () => {
 		divHover.style.backgroundColor = 'transparent';
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	let btn2 = document.createElement('button');
 	let btnMsg2 = document.createTextNode('SPAN');
 	btn2.appendChild(btnMsg2);
-	document.body.appendChild(btn2);
+	document.body.appendChild(btn2)	
 	document.body.appendChild(div);
 
 	let span = document.createElement('span');
